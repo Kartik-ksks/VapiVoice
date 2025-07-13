@@ -8,7 +8,7 @@
       "preview": "vite preview"
     },
     "dependencies": {
-        "@vapi-ai/web": "file:../vapi-ai-web-latest.tgz",
+        "@vapi-ai/web": "^2.3.8",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
       },
