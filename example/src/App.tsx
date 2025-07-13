@@ -210,7 +210,7 @@ function App() {
       padding: '20px',
       fontFamily: 'Arial, sans-serif'
     }}>
-      <h1 style={{ textAlign: 'center', color: '#333' }}>Vapi Voice Assistant</h1>
+      <h1 style={{ textAlign: 'center', color: '#333' }}>Teleaccess Voice Assistant</h1>
       
       {/* Status Panel */}
       <div style={{
