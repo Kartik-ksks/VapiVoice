@@ -103,44 +103,8 @@ function App() {
     try {
       addMessage('system', 'Starting call...');
       
-      // Start call with assistant configuration
-      await vapi.start({
-        // Basic assistant configuration
-        model: {
-          provider: "openai",
-          model: "gpt-4o",
-          messages: [
-            {
-              role: "system",
-              content: "You are a helpful assistant. Keep your responses concise and conversational. You're speaking to someone through voice, so avoid using formatting or special characters."
-            }
-          ]
-        },
-        
-        // Voice configuration
-        voice: {
-          provider: "vapi",
-          voiceId: "Elliot"
-        },
-        
-        // Transcriber configuration
-        transcriber: {
-          provider: "deepgram",
-          model: "nova-2",
-          language: "en-US"
-        },
-        
-        // Call settings
-        firstMessage: "Hello! I'm your AI assistant. How can I help you today?",
-        endCallMessage: "Thank you for the conversation. Goodbye!",
-        endCallPhrases: ["goodbye", "bye", "end call", "hang up"],
-        
-        // Silence timeout (in seconds)
-        silenceTimeoutSeconds: 30,
-        
-        // Max call duration (in seconds) - 10 minutes
-        maxDurationSeconds: 600
-      });
+      // Start call with assistant ID
+      await vapi.start('63c56ad4-2b99-47f4-9871-bca8d04d37e0');
       
     } catch (error) {
       console.error('Error starting call:', error);
